@@ -1,24 +1,31 @@
 .container {
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(#121212, #212b46);
+  /* background: linear-gradient(#121212, #212b46);  */
+  background-image: url(./assets/background-img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
   font-size: 4rem;
   color: #fff;
-  animation: flipTitle 2s;
+  animation: left-right 4s;
 }
 
-@keyframes flipTitle {
-  from {
-    transform: rotateX(90deg);
+@keyframes left-right {
+  0% {
+    transform: translateX(80px);
   }
-  to {
-    transform: rotateX(0deg);
+  50% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -63,7 +70,7 @@ main {
 
   justify-content: center;
   align-items: center;
-  
+
   background-color: #fff;
   width: 500px;
   border-radius: 8px;
@@ -80,6 +87,10 @@ main {
 }
 
 @media screen and (max-width: 620px) {
+  .container {
+    background-position: right;
+  }
+
   .title {
     font-size: 3rem;
   }
