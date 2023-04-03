@@ -30,7 +30,7 @@ Project developed with React, which consumes data from an api.
 
 <h2>📺Preview:</h2>
 
-<img src='../src/assets/project-api-react.jpg></img>
+<img src='../src/assets/project-api-react.jpg'></img>
 
 <h2>🕹Website link:</h2>
 
